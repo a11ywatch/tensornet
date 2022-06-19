@@ -1,28 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "target": "es5",
     "module": "commonjs",
-    "lib": ["dom", "es6"],
-    "sourceMap": true,
-    "allowJs": true,
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "noEmit": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "lib": ["es2016"],
     "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "dist/",
+    "declaration": true,
+    "declarationDir": "./types",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
     "paths": {
-      "@app/*": ["./src/*"]
+      "@app/*": ["src/*"]
     }
   },
-  "include": ["./src"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
