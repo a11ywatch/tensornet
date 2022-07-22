@@ -1,4 +1,3 @@
-import { disposeVariables } from "@tensorflow/tfjs-core";
 import { aiModels } from "./ai-models";
 import { chainNextClassifier } from "./chain-next";
 
