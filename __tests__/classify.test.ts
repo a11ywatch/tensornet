@@ -13,7 +13,7 @@ describe("classify base64 image using tensorflow Models", () => {
 
     const classification = await classify(SAMPLE);
 
-    expect(classification[0].className).toEqual("Siamese cat, Siamese");
+    expect(classification && classification[0].className).toEqual("Siamese cat, Siamese");
   });
 
   test.skip("use sharp", async () => {
@@ -22,6 +22,6 @@ describe("classify base64 image using tensorflow Models", () => {
 
     const classification = await classifyAsync(SAMPLE);
 
-    expect(classification[0].className).toEqual("Siamese cat, Siamese");
+    expect(classification && classification[0].className).toEqual("Siamese cat, Siamese");
   });
 });

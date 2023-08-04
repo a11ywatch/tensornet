@@ -1,8 +1,8 @@
-import { load, MobileNet } from "@tensorflow-models/mobilenet";
+import { load, MobileNet } from "./models/mobilenet/lib";
 import {
   load as cocoSsdLoad,
   ObjectDetection,
-} from "@tensorflow-models/coco-ssd";
+} from "./models/coco-ssd/lib";
 
 let mobileNetModel: MobileNet | null;
 let cocoaSDModel: ObjectDetection | null;

@@ -51,6 +51,8 @@ The benefits of using pure js to calc the image is in a couple areas:
 1. speed is also faster since the calcs are done at hand without needing to bridge any calls.
 1. can use tensors in worker threads - allows for properly using Tensorflow wasm backends in an API service 🥳.
 
+The TF models are checked in localy.
+
 ## Benchmarks
 
 Examples of some test ran on a mac m1(64gb):
