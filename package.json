@@ -1,6 +1,6 @@
 {
   "name": "tensornet",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "a pure js convert a base64 to a tensor object for node",
   "main": "dist/index.js",
   "scripts": {
@@ -22,13 +22,14 @@
   },
   "homepage": "https://github.com/A11yWatch/tensornet#readme",
   "dependencies": {
-    "base64-to-tensor": "^1.2.15"
+    "base64-to-tensor": "^1.2.16"
   },
   "devDependencies": {
     "@swc/core": "^1.2.204",
     "@swc/jest": "^0.2.21",
     "@tensorflow/tfjs-backend-wasm": "^4.9.0",
     "@tensorflow/tfjs-core": "^4.9.0",
+    "@tensorflow/tfjs-converter": "^4.9.0",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
