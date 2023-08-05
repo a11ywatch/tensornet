@@ -1,6 +1,6 @@
 {
   "name": "tensornet",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "a pure js convert a base64 to a tensor object for node",
   "main": "dist/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/A11yWatch/tensornet#readme",
   "dependencies": {
-    "base64-to-tensor": "^1.2.8"
+    "base64-to-tensor": "^1.2.12"
   },
   "devDependencies": {
     "@swc/core": "^1.2.204",
