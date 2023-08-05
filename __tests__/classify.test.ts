@@ -6,6 +6,7 @@ import { classifyAsync } from "../src/classify-async";
 import { SAMPLE } from "../__mocks__/sample";
 import { ready, setBackend } from "@tensorflow/tfjs-core";
 
+const siamesCat = "Siamese cat, Siamese"
 
 describe("classify base64 image using tensorflow Models", () => {
   beforeAll(async () => {
@@ -15,13 +16,12 @@ describe("classify base64 image using tensorflow Models", () => {
   test("use pure js", async () => {
     const classification = await classify(SAMPLE);
 
-    expect(classification && classification[0].className).toEqual("Siamese cat, Siamese");
+    expect(classification && classification[0].className).toEqual(siamesCat);
   });
 
-  test.skip("use sharp", async () => {
+  test("use sharp", async () => {
     const classification = await classifyAsync(SAMPLE);
 
-    // the async tensor returning incorrect results
-    expect(classification && classification[0].className).toEqual("Siamese cat, Siamese");
+    expect(classification && classification[0].className).toEqual(siamesCat);
   });
 });
